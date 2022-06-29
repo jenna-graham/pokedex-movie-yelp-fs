@@ -5,6 +5,7 @@ export default function BusinessList({ businesses }) {
     <div>
       {businesses.map((business, i) => <div key={business.name + i}>
         <p>{business.name}</p>
+        <img src={business.image_url}></img>
          
       </div>)}
     </div>
